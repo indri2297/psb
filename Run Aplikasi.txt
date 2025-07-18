@@ -1,0 +1,4 @@
+Run Aplikasi
+PS C:\xampp\htdocs\psb> docker run --rm -p 80:80 -v C:\xampp\htdocs\psb\pendaftar\config.php:/var/www/html/pendaftar/config.php -v C:\xampp\htdocs\psb\pendaftar\config.php:/var/www/html/admin/config.php indri2297/psb
+Link docker image
+https://hub.docker.com/r/indri2297/psb 

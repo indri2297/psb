@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran - SMA TUNAS BANGSA</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f7f9;
+    }
+
+    header, footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #0055aa;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Formulir Pendaftaran Siswa Baru</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Halaman Utama</a>
+    <a href="beranda.html">Beranda</a>
+    <a href="info.html">Informasi</a>
+     <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <main>
+    <form action="proses.php" method="POST">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nisn">NISN:</label>
+        <input type="text" id="nisn" name="nisn" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nisn">Nilai Akhir:</label>
+        <input type="text" id="nilai_akhir" name="nilai_akhir" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+      </div>
+
+      <div class="form-group">
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+          <option value="">-- Pilih --</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="asal_sekolah">Asal Sekolah:</label>
+        <input type="text" id="asal_sekolah" name="asal_sekolah" required>
+      </div>
+
+      <div class="form-group">
+        <label for="alamat">Alamat Lengkap:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="no_hp">No. HP Orang Tua/Wali:</label>
+        <input type="text" id="no_hp" name="no_hp" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Aktif:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Kirim Pendaftaran</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 SMA Tunas Bangsa | info@smatunasbangsa.sch.id</p>
+  </footer>
+
+</body>
+</html>
